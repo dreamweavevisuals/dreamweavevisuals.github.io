@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #101010;
+    color: #f1f2f3;
+}
+.container{
+    padding: 10px 10%;
+}
+.container.wide{
+    margin-top: 50px;
+    max-width: 100%;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: #101010;
+    padding: 10px 10%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+.logo{
+    cursor: pointer;
+    width: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    z-index: 10;
+}
+nav ul li a{
+    color: #f1f2f3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #c3357f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.burger{
+    display: none;
+    z-index: 10;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #f1f2f3;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width:880px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        position: absolute;
+        z-index: 10;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        margin: 0px;
+        background-color: #101010;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+    nav ul li{
+        opacity: 0;
+        margin: 30px;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* Swiper */
+.swiper-slide img{
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 65rem;
+    border-radius: 25px;
+    object-fit: cover;
+}

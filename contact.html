@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+<body>
+
+    <!-- Navigation Start -->
+    <nav>
+        <img src="assets/dreamweavevisualslogo.png" class="logo">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./art.html">Art</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="./music.html">Music</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Contact Form Start-->
+    <div class="container-contact">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Like what you see? Feel free to use this contact form for all inquiries!
+              <br>
+              <br>
+              Alternatively, you can copy & paste my business email below into your preferred
+              email client.
+            </p>
+  
+            <div class="info">
+              <!--
+              <div class="information">
+                <img src="assets/contactform/location.png" class="icon" alt="" />
+                <p>Insert Address Here</p>
+              </div>
+              -->
+              <div class="information">
+                <img src="assets/contactform/email.png" class="icon" alt="" />
+                <p>dreamweavevisuals@gmail.com</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Find me on:</p>
+              <div class="social-icons">
+                <!--
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                -->
+                <a href="https://twitter.com/DreamweaveArt">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <!--
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                -->
+                <a href="https://www.linkedin.com/in/bgoldproductions/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfdVHFFeK2VkXymaXFKS8ZaFYTO7O9beTQb66Ac3sNMvdTY0A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
+              <h3 class="title">Contact Form</h3>
+              <div class="input-container">
+                <input type="name" name="entry.629238552" id="entry.629238552" class="input" />
+                <label for="">Name</label>
+                <span>Name</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="entry.1645309131" id="entry.1645309131" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <!--
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              -->
+              <div class="input-container textarea">
+                <textarea name="entry.1744650061" id="entry.1744650061" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script type="text/javascript">var submitted=false;</script>
+            <script type="text/javascript">
+            $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(1000);
+            $('#gform').prepend('Your submission has been processed...');
+            });
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form End -->
+  
+      <!-- Personal JS -->
+      <script src="app.js"></script>
+</body>
+</html>

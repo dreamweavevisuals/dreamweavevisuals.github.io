@@ -546,7 +546,10 @@ textarea.input::-webkit-scrollbar-thumb {
     display: block;
     width: 80%;
     margin: auto;
-    height: 65rem;
+    /*height: 65rem;*/
+    height: auto;
+    min-height: 25rem;
+    max-height: 65rem;
     border-radius: 25px;
     object-fit: cover;
 }

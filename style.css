@@ -14,7 +14,7 @@ body{
 .container.wide{
     /*margin-top: 50px;*/
     position: absolute;
-    top: 150px;
+    top: 102.64px;
     max-width: 100%;
     padding: 0;
 }
@@ -34,7 +34,7 @@ nav{
 }
 .logo{
     cursor: pointer;
-    width: 80px;
+    width: 69px;
 }
 nav ul li{
     display: inline-block;
@@ -83,7 +83,8 @@ nav ul li a:hover::after{
     position: relative;
     width: 100%;
     min-height: 92vh;
-    padding: 2rem;
+    top: 102.64px;
+    padding: 0rem 2rem 2rem;
     background-color: #101010;
     overflow: hidden;
     display: flex;
@@ -548,8 +549,8 @@ textarea.input::-webkit-scrollbar-thumb {
     margin: auto;
     /*height: 65rem;*/
     height: auto;
-    min-height: 25rem;
-    max-height: 65rem;
+    min-height: 20rem;
+    max-height: 84vh;
     border-radius: 25px;
     object-fit: cover;
 }

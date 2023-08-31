@@ -108,7 +108,7 @@ nav ul li a:hover::after{
   border: .25vw solid #f1f2f3; /* 6px */
   margin-left: 10vw;
 	margin-right: 10vw;
-  padding: 10px;
+  padding: 0.5vw; /* 10px */
   width: 80vw;
   height: auto;
 }
@@ -593,6 +593,16 @@ textarea.input::-webkit-scrollbar-thumb {
     .burger{
         display: block;
         cursor: pointer;
+    }
+    /* Photo Galleries */
+    .gallery {
+      width: 100%;
+    }
+    .landscape-grid {
+      width: 100%;
+    }
+    .gallery-caption {
+      font-size: 1.25vw;
     }
     /* Contact Form */
     .form {

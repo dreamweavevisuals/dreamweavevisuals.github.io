@@ -589,10 +589,12 @@ textarea.input::-webkit-scrollbar-thumb {
     nav ul li{
         opacity: 0;
         margin: 30px;
+        -webkit-tap-highlight-color: transparent;
     }
     .burger{
         display: block;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
     }
     /* Photo Galleries */
     .gallery {

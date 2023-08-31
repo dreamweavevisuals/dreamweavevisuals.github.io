@@ -93,6 +93,151 @@ nav ul li a:hover::after{
 }
 /* Navigation CSS End */
 
+/* Photography Gallery Start */
+.photography-page {
+  position: absolute;
+  top: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+  justify-content: space-between;
+}
+.gallery-outline {
+	border-radius: 2vw; /* 50px */
+  border: .25vw solid #f1f2f3; /* 6px */
+  margin-left: 10vw;
+	margin-right: 10vw;
+  padding: 10px;
+  width: 80vw;
+  height: auto;
+}
+.gallery {
+  display: flex;
+  width: 40vw;
+  transition: 0.3s;
+}
+.gallery:hover .gallery-image {
+  filter: grayscale(1);
+}
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.gallery-link {
+  display: grid;
+  margin: .5vw; /* 10px */
+  overflow: hidden;
+  border-radius: 1vw; /* 25px */
+}
+.gallery-link:hover .gallery-image {
+  filter: grayscale(0);
+}
+.gallery-link:hover .gallery-caption {
+  opacity: 1;
+}
+.gallery-thumb {
+  position: relative;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vw .5vw .5vw; /* 25px 15px 15px */
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.55vw; /* 16px */ 
+  color: #f1f2f3;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+.landscape-grid {
+  box-sizing: border-box;
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-auto-rows: 20vh; */
+  grid-template-rows: repeat(4, 1fr);
+  /* gap: 20px; */
+  width: 40vw;
+  float: right;
+  transition: 0.3s;
+}
+.landscape-grid-container {
+  position: relative;
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.landscape-grid > .gallery-link:nth-child(9) > .gallery-thumb > .landscape-grid-container {
+  object-position: 100% 50%;
+}
+.landscape-grid > .gallery-link:nth-child(10) > .gallery-thumb > .landscape-grid-container {
+  object-position: 30% 50%;
+}
+.landscape-grid > .gallery-link:nth-child(11) > .gallery-thumb > .landscape-grid-container {
+  object-position: 40% 50%;
+}
+/*
+.landscape-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*
+.landscape-grid > img:nth-child(1) {
+  object-position: 50% 35%;
+}
+.landscape-grid > img:nth-child(9) {
+  object-position: 100% 50%;
+}
+.landscape-grid > img:nth-child(10) {
+  object-position: 35% 50%;
+}
+.landscape-grid > img:nth-child(11) {
+  object-position: 42% 50%;
+}
+*/
+.landscape-grid:hover .landscape-grid-container {
+  filter: grayscale(1);
+}
+.gallery-link:hover .landscape-grid-container {
+  filter: grayscale(0);
+}
+.landscape-grid-container:hover {
+  transform: scale(1.1);
+}
+/*
+.landscape-grid:hover > .landscape-grid-container {
+  filter: grayscale(1);
+}
+.landscape-grid > .landscape-grid-container:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+*/
+.landscape-grid-vertical {
+  grid-row: span 2;
+}
+.landscape-grid-horizontal {
+  grid-column: span 2;
+}
+
+/* Photography Gallery End */
+
 /* Contact Form CSS Start */
 .container-contact {
     position: relative;

@@ -1,47 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamweave Visuals</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dreamweave Visuals</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="style.css">
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <!-- Navigation Start -->
-    <nav>
-        <img src="assets/dreamweavevisualslogo.png" class="logo">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./art.html">Art</a></li>
-            <li><a href="./photography.html">Photography</a></li>
-            <li><a href="./music.html">Music</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <!-- Navigation Start -->
+        <nav>
+            <img src="assets/dreamweavevisualslogo.png" class="logo">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./art.html">Art</a></li>
+                <li><a href="./photography.html">Photography</a></li>
+                <li><a href="./music.html">Music</a></li>
+                <button class="glow-on-hover" type="button">Contact</button>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- Navigation End -->
+
+        <div class = "art-page">
+
+            <div class = "art-page-background"></div>
+
+            <div class = "art-filters">
+                <div class="indicator"></div>
+                <ul>
+                    <li class="active"><button type="button">Thumbnails</button></li>
+                    <li><button type="button">Animation</button></li>
+                    <li><button type="button">Wallpapers</button></li>
+                    <li><button type="button">Banners</button></li>
+                    <li><button type="button">Album Art</button></li>
+                </ul>
+                <!--
+                <ul>
+                    <li class="active"><a href="#">Thumbnails</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">Wallpapers</a></li>
+                    <li><a href="#">Album Art</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                -->
+            </div>
+
+            <div class="art-container">
+                <div class ="thumbnail-grid">
+                    <div class="thumbnail-column">
+                        <a href="assets/apex-legends/thumbnails/0201-nicewigg-2021-03-02-thumbnail.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/0201-nicewigg-2021-03-02-thumbnail.webp" alt="Thumbnail1" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/HorizonGuideTN-1080p.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/HorizonGuideTN-1080p.webp" alt="Thumbnail2" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/RampartTurretUnderrated2.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/RampartTurretUnderrated2.webp" alt="Thumbnail3" class="gallery-image">
+                            </figure>
+                        </a>
+                    </div>
+                    
+                    <div class="thumbnail-column">
+                        <a href="assets/apex-legends/thumbnails/Fuse-FinalRing-TN.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/Fuse-FinalRing-TN.webp" alt="Thumbnail4" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/Bloodhound_Predator_TN3.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/Bloodhound_Predator_TN3.webp" alt="Thumbnail5" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/best octane player 4k damage badge apex legends nicewigg.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/best octane player 4k damage badge apex legends nicewigg.webp" alt="Thumbnail6" class="gallery-image">
+                            </figure>
+                        </a>
+                    </div>
+        
+                    <div class="thumbnail-column">
+                        <a href="assets/apex-legends/thumbnails/WraithGuide-1080p.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/WraithGuide-1080p.webp" alt="Thumbnail7" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/wraith-longbow-s9-tn-v3.png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/wraith-longbow-s9-tn-v3.webp" alt="Thumbnail8" class="gallery-image">
+                            </figure>
+                        </a>
+        
+                        <a href="assets/apex-legends/thumbnails/0259-nicewigg-2021-10-05 thumbnail (720p).png" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/thumbnails/0259-nicewigg-2021-10-05 thumbnail (720p).webp" alt="Thumbnail9" class="gallery-image">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "wallpaper-grid">
+                    <div class="wallpaper-column">
+                        <a href="assets/apex-legends/wallpapers/pathfinder-memoirnoir-wallpaper-color-1k.webp" target="_blank" class="gallery-link">
+                            <figure class="gallery-thumb">
+                                <img src="assets/apex-legends/wallpapers/pathfinder-memoirnoir-wallpaper-color-1k.webp" alt="Wallpaper1" class="gallery-image">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </nav>
 
-    <!-- Navigation End -->
+            <!-- Navigation JS -->
+            <script src="nav.js"></script>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-        <!-- Personal JS -->
-        <script src="app.js"></script>
-    
+            <!-- Art Page JS -->
+            <script src="art.js"></script>
+        
     </body>
-    </html>
+</html>
